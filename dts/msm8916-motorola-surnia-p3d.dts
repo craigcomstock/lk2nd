@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+/include/ "msm8916.dtsi"
+/include/ "motorola-carrier-channel-ids.dtsi"
+
+/ {
+qcom,msm-id = <0xce 0x0 0xf8 0x0 0xf9 0x0 0xfa 0x0>;
+	qcom,board-id = <0x46 0x830d>;
+	model = "Motorola Moto G4 Play (harpia)";
+	compatible = "motorola,harpia", "qcom,msm8916", "lk2nd,device";
+
+	lk2nd,uart = <1>;
+	lk2nd,motorola-unitinfo = <1>;
+};
